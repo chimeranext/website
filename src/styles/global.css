@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  body { @apply bg-surface-background text-text-primary font-body antialiased; }
+  h1,h2,h3 { @apply font-heading; }
+  ::selection { @apply bg-brand-primary/30; }
+}

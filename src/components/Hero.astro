@@ -1,0 +1,21 @@
+---
+import { ventures } from "../data/ventures.ts";
+---
+<section class="py-16 text-center">
+  <h1 class="bg-brand-gradient bg-clip-text text-4xl font-extrabold leading-tight text-transparent sm:text-5xl">
+    Costa Rica's AI-native,<br />product-led venture studio.
+  </h1>
+  <p class="mx-auto mt-4 max-w-2xl text-text-secondary">
+    Four ventures we build, ship &amp; operate — on a stack you can build on too.
+  </p>
+  <div class="mt-6">
+    <a href="#book" class="inline-block rounded-lg bg-brand-gradient px-6 py-3 font-semibold text-white">Book a call</a>
+  </div>
+  <div class="mt-10 grid grid-cols-2 gap-3 sm:grid-cols-4">
+    {ventures.map((v) => (
+      <a href={v.domain} class="flex h-20 items-center justify-center rounded-lg border border-surface-border bg-surface-card text-text-primary transition hover:border-brand-primary">
+        {v.name}
+      </a>
+    ))}
+  </div>
+</section>

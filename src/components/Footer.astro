@@ -1,0 +1,15 @@
+---
+import { ventures } from "../data/ventures.ts";
+---
+<footer class="border-t border-surface-border py-10 text-sm text-text-secondary">
+  <div class="mx-auto flex max-w-6xl flex-col gap-4 px-6 sm:flex-row sm:items-center sm:justify-between">
+    <div>
+      <p class="font-heading font-extrabold text-text-primary">ChimeraNext Shared Services LLC</p>
+      <p class="mt-1">Costa Rica · MSA model · source-available stack</p>
+    </div>
+    <div class="flex flex-wrap gap-4">
+      {ventures.map((v) => <a href={v.domain} class="hover:text-text-primary">{v.name}</a>)}
+      <a href="https://better-ms.dev" class="hover:text-text-primary">better-microservices</a>
+    </div>
+  </div>
+</footer>

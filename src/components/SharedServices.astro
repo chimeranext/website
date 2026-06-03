@@ -1,0 +1,15 @@
+---
+import { sharedServices } from "../data/sharedServices.ts";
+---
+<section id="services" class="py-16">
+  <p class="text-xs uppercase tracking-widest text-brand-tertiary">Shared services</p>
+  <h2 class="mt-2 text-3xl font-extrabold text-text-primary">Hire the studio's shared services.</h2>
+  <div class="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-4">
+    {sharedServices.map((s) => (
+      <div class="rounded-xl border border-surface-border bg-surface-card p-5">
+        <h3 class="font-extrabold text-text-primary">{s.title}</h3>
+        <p class="mt-1 text-sm text-text-secondary">{s.blurb}</p>
+      </div>
+    ))}
+  </div>
+</section>
