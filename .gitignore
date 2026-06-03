@@ -3,6 +3,10 @@ node_modules/
 dist/
 .astro/
 
+# playwright artifacts
+test-results/
+playwright-report/
+
 # env
 .env
 .env.*
