@@ -1,0 +1,14 @@
+# deps / build
+node_modules/
+dist/
+.astro/
+
+# env
+.env
+.env.*
+
+# brainstorm companion artifacts (transient)
+.superpowers/
+
+# os
+.DS_Store
