@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="brand" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7C5CFF"/>
+      <stop offset="0.5" stop-color="#3B82F6"/>
+      <stop offset="1" stop-color="#22D3EE"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.4" r="0.8">
+      <stop offset="0" stop-color="#1C1830"/>
+      <stop offset="1" stop-color="#08060F"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <rect x="64" y="64" width="120" height="120" rx="26" fill="#0C0A14" stroke="#2A2640" stroke-width="2"/>
+  <path d="M96 156l24-60 18 42 18-42 24 60" fill="none" stroke="url(#brand)" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="64" y="330" font-family="Sora, system-ui, sans-serif" font-size="78" font-weight="800" fill="url(#brand)">ChimeraNext</text>
+  <text x="64" y="412" font-family="Inter, system-ui, sans-serif" font-size="40" font-weight="600" fill="#ECE8F2">Costa Rica's AI-native, product-led</text>
+  <text x="64" y="466" font-family="Inter, system-ui, sans-serif" font-size="40" font-weight="600" fill="#ECE8F2">venture studio.</text>
+  <text x="64" y="548" font-family="Inter, system-ui, sans-serif" font-size="28" font-weight="400" fill="#837C99">Four ventures we build, ship &amp; operate — on a stack you can build on too.</text>
+  <rect x="0" y="618" width="1200" height="12" fill="url(#brand)"/>
+</svg>

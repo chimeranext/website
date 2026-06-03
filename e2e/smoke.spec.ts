@@ -11,6 +11,13 @@ test("mobile menu toggles open", async ({ page }) => {
 test("booking dialog opens", async ({ page }) => {
   await page.goto("/");
   await expect(page.getByTestId("booking-panel")).toBeHidden();
+  // CtaBand mounts BookingDialog with client:visible — scroll it into view and
+  // let the island hydrate before clicking so the open handler is attached.
+  await page.getByTestId("open-booking").scrollIntoViewIfNeeded();
+  await page.waitForFunction(() => {
+    const el = document.querySelector('astro-island[component-url*="BookingDialog"]');
+    return el !== null && !el.hasAttribute("ssr");
+  });
   await page.getByTestId("open-booking").click();
   await expect(page.getByTestId("booking-panel")).toBeVisible();
 });
