@@ -1,0 +1,22 @@
+---
+import type { Venture } from "../data/ventures.ts";
+const { v } = Astro.props as { v: Venture };
+---
+<article class="flex flex-col rounded-xl border border-surface-border bg-surface-card p-5">
+  <div class="mb-3 flex flex-wrap gap-2">
+    {v.industries.map((i) => (
+      <span class="rounded-full border border-brand-secondary px-2.5 py-0.5 text-[10px] uppercase tracking-wide text-brand-tertiary">{i}</span>
+    ))}
+    <span class="rounded-full border border-surface-border px-2.5 py-0.5 text-[10px] uppercase tracking-wide text-text-secondary">{v.market}</span>
+  </div>
+  <h3 class="text-lg font-extrabold text-text-primary">{v.name}</h3>
+  <p class="mt-1 font-semibold text-text-primary">{v.uvp}</p>
+  <p class="mt-2 flex-1 text-sm text-text-secondary">{v.purpose}</p>
+  <p class="mb-1.5 mt-3 text-[10px] uppercase tracking-wide text-text-secondary">Built on</p>
+  <div class="mb-4 flex flex-wrap gap-1.5">
+    {v.builtOn.map((b) => (
+      <a href={`#stack`} class:list={["rounded-md border px-2 py-0.5 font-mono text-[11px]", b.confirmed ? "border-brand-secondary text-brand-tertiary" : "border-dashed border-surface-border text-text-secondary"]}>{b.slug}</a>
+    ))}
+  </div>
+  <a href={v.domain} class="self-start rounded-lg border border-brand-secondary px-4 py-2 text-sm text-brand-secondary hover:bg-brand-secondary/10">Learn More →</a>
+</article>
