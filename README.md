@@ -59,3 +59,5 @@ stays green. Resolve before shipping:
   `https://chimeranext.com` in `astro.config.mjs`.
 - **EN/ES** — decide on internationalization (currently English only); add an
   Astro i18n setup + Spanish copy if a bilingual site is wanted.
+- **OG image format** — export `og-image.svg` → `og-image.png` (many social
+  scrapers don't render SVG OG images) and point the `og:image` meta at the PNG.
