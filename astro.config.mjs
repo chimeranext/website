@@ -3,6 +3,6 @@ import react from "@astrojs/react";
 import tailwind from "@astrojs/tailwind";
 
 export default defineConfig({
-  site: "https://chimeranext.com",
+  site: "https://chimeranext.dev",
   integrations: [react(), tailwind({ applyBaseStyles: false })],
 });
