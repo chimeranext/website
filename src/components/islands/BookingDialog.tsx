@@ -10,7 +10,7 @@ export default function BookingDialog() {
       <button
         data-testid="open-booking"
         onClick={() => setOpen(true)}
-        className="rounded-lg bg-brand-gradient px-6 py-3 font-semibold text-white"
+        className="rounded-lg bg-brand-gradient px-6 py-3 font-semibold text-brand-secondary"
       >
         Book a call
       </button>
@@ -20,7 +20,7 @@ export default function BookingDialog() {
           <DialogPanel data-testid="booking-panel" className="w-full max-w-md rounded-xl border border-surface-border bg-surface-content p-6">
             <DialogTitle className="font-heading text-xl font-extrabold text-text-primary">Let's talk.</DialogTitle>
             <p className="mt-2 text-sm text-text-secondary">Pick a slot — 30 minutes, no slides.</p>
-            <a href={CAL_URL} target="_blank" rel="noopener" className="mt-4 inline-block rounded-lg bg-brand-gradient px-5 py-2.5 font-semibold text-white">Open scheduler →</a>
+            <a href={CAL_URL} target="_blank" rel="noopener" className="mt-4 inline-block rounded-lg bg-brand-gradient px-5 py-2.5 font-semibold text-brand-secondary">Open scheduler →</a>
             <button onClick={() => setOpen(false)} className="ml-3 text-sm text-text-secondary hover:text-text-primary">Close</button>
           </DialogPanel>
         </div>
