@@ -1,0 +1,20 @@
+---
+const pains = [
+  { p: "Devs sueltos que no shippean", s: "Equipo embedded que opera lo que construye, con dueño del lado del estudio." },
+  { p: "Agencias que entregan y desaparecen", s: "MSA mensual con SLAs y tableros que ves vos mismo." },
+  { p: "Meses sin tracción", s: "Microservicios probados en producción desde el día uno." },
+];
+---
+<section class="border-y border-surface-border bg-surface-card">
+  <div class="mx-auto max-w-6xl px-6 py-14">
+    <h2 class="font-epic text-3xl font-semibold text-text-primary">El MVP muere en el handoff.</h2>
+    <dl class="mt-8 divide-y divide-surface-border border-y border-surface-border">
+      {pains.map((x) => (
+        <div class="grid gap-1 py-4 sm:grid-cols-[1fr_1.2fr] sm:gap-6">
+          <dt class="font-semibold text-bloodSoft">{x.p}</dt>
+          <dd class="max-w-prose text-sm text-text-secondary">→ {x.s}</dd>
+        </div>
+      ))}
+    </dl>
+  </div>
+</section>
