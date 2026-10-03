@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@theme {
+  --font-heading: 'Alegreya Variable', 'Alegreya', 'Piazzolla Variable', 'Piazzolla', Georgia, serif;
+  --font-display: 'Piazzolla Variable', 'Piazzolla', 'Alegreya Variable', 'Alegreya', Georgia, serif;
+  --font-epic: 'Piazzolla Variable', 'Piazzolla', Georgia, serif;
+  --font-body: 'Alegreya Sans', system-ui, -apple-system, sans-serif;
+  --font-mono: 'Inconsolata Variable', 'Inconsolata', ui-monospace, monospace;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Alegreya Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: 'Alegreya Variable', 'Alegreya', 'Piazzolla Variable', 'Piazzolla', Georgia, serif;
+  }
+}
+
+.font-heading {
+  font-family: 'Alegreya Variable', 'Alegreya', 'Piazzolla Variable', 'Piazzolla', Georgia, serif;
+}
+
+.font-display {
+  font-family: 'Piazzolla Variable', 'Piazzolla', 'Alegreya Variable', 'Alegreya', Georgia, serif;
+}
+
+.font-epic {
+  font-family: 'Piazzolla Variable', 'Piazzolla', Georgia, serif;
+}
+
+.font-body {
+  font-family: 'Alegreya Sans', system-ui, -apple-system, sans-serif;
+}
+
+.font-mono {
+  font-family: 'Inconsolata Variable', 'Inconsolata', ui-monospace, monospace;
+}
+
+/* Compatibility aliases so existing classes inherit the exact chimeranext/website fonts */
+.font-jakarta {
+  font-family: 'Alegreya Sans', system-ui, -apple-system, sans-serif;
+}
+
+h1.font-jakarta, h2.font-jakarta, h3.font-jakarta, h4.font-jakarta {
+  font-family: 'Alegreya Variable', 'Alegreya', 'Piazzolla Variable', 'Piazzolla', Georgia, serif;
+}
+
+.font-grotesk {
+  font-family: 'Inconsolata Variable', 'Inconsolata', ui-monospace, monospace;
+}

@@ -1,0 +1,6 @@
+{
+  "name": "ChimeraNext - Venture Studio & Shared Services",
+  "description": "Plataforma web de ChimeraNext Shared Services LLC: ecosistema de microservicios, portafolio de ventures e infraestructura de aceleración tecnológica.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
