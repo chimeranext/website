@@ -1,9 +1,9 @@
 ---
 const stats = [
-  { n: "4", l: "ventures shipped" },
-  { n: "8", l: "microservices" },
-  { n: "CR", l: "nearshore base" },
-  { n: "BSL", l: "source-available" },
+  { n: "4", l: "ventures propios (0 agencias)" },
+  { n: "1", l: "stack compartido" },
+  { n: "8", l: "microservicios en prod" },
+  { n: "0", l: "handoffs" },
 ];
 ---
 <section class="py-12">
@@ -11,7 +11,7 @@ const stats = [
     {stats.map((s) => (
       <div class="flex flex-col items-center justify-center rounded-xl border border-surface-border bg-surface-card py-6">
         <span class="text-2xl font-extrabold text-text-primary">{s.n}</span>
-        <span class="font-mono text-[11px] text-text-secondary">{s.l}</span>
+        <span class="font-mono text-xs text-text-secondary">{s.l}</span>
       </div>
     ))}
   </div>

@@ -1,10 +1,9 @@
 ---
 import { microservices } from "../data/microservices.ts";
 ---
-<section id="stack" class="rounded-2xl border border-brand-primary/40 bg-surface-content py-12 px-6">
-  <p class="text-xs uppercase tracking-widest text-brand-tertiary">The stack</p>
-  <h2 class="mt-2 text-3xl font-extrabold text-text-primary">The same microservices we built all four on.</h2>
-  <p class="mt-2 text-text-secondary">Source-available · pick-what-you-need. Production-grade, already running four ventures. → <a class="text-brand-primary" href="https://better-ms.dev">better-ms.dev</a></p>
+<section id="stack" class="border-t border-surface-border py-12">
+  <h2 class="font-epic text-3xl font-semibold text-text-primary">The same microservices we built all four on.</h2>
+  <p class="mt-2 max-w-prose text-frostSoft">Source-available · pick-what-you-need. Production-grade, already running four ventures. → <a class="text-arcaneSoft underline decoration-arcane/50 underline-offset-4" href="https://better-ms.dev">better-ms.dev</a></p>
   <div class="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-4">
     {microservices.map((m) => (
       <div class="flex h-14 items-center justify-center rounded-lg border border-surface-border bg-surface-card font-mono text-xs text-text-primary">{m.slug}</div>
