@@ -41,4 +41,11 @@ describe("Chimera design tokens (Academy D&D, SSOT @chimeranext/tokens)", () => 
       tokens.gradient.brand,
     );
   });
+  it("exposes text-on-dark soft steps from the SSOT (arcane/frost/mana/charm/blood roles)", () => {
+    expect(colors.arcaneSoft).toBe(tokens.brand.arcaneSoft);
+    expect(colors.frostSoft).toBe(tokens.brand.frostSoft);
+    expect(colors.manaSoft).toBe(tokens.brand.manaSoft);
+    expect(colors.charmSoft).toBe(tokens.brand.charmSoft);
+    expect(colors.bloodSoft).toBe(tokens.brand.bloodSoft);
+  });
 });
