@@ -2,143 +2,117 @@ import { Venture, ServiceItem, BookingSlot } from '../types';
 
 export const VENTURES_DATA: Venture[] = [
   {
-    id: 'nexuspay',
-    name: 'NexusPay',
-    category: 'FINTECH / PAGOS TRANSFRONTERIZOS',
+    id: 'vertivolatam',
+    name: 'Vertivolatam',
+    category: 'AGTECH / VISIÓN IA',
     status: 'Live Production',
-    description: 'Plataforma de orquestación de pagos internacionales con liquidación instantánea multimoneda y cumplimiento regulatorio automatizado para corporaciones en América y Europa.',
-    mainMetricLabel: 'Tracción Anualizada',
-    mainMetricValue: '$12.4M ARR',
-    subMetricLabel: 'Microservicios Núcleo',
-    subMetricValue: 'Engine Liquidity + AML Shield',
-    techStack: ['Go', 'Rust', 'Kafka', 'Astro', 'React Islands', 'ClickHouse', 'PostgreSQL'],
-    foundedYear: '2023',
-    tractionSummary: 'De 0 a $12.4M ARR en 18 meses utilizando el motor de liquidación compartida de ChimeraNext.',
+    description: 'Catch crop disease before it spreads: AI vision on the edge. Detección fitosanitaria + NVIDIA physical-AI para invernaderos y campo. Hardware + SaaS.',
+    mainMetricLabel: 'Detección',
+    mainMetricValue: 'Fitosanitaria edge',
+    subMetricLabel: 'Mercado',
+    subMetricValue: 'Greenhouse growers · LATAM',
+    techStack: ['Edge AI', 'Computer Vision', 'Hardware', 'SaaS'],
+    foundedYear: '—',
+    tractionSummary: 'Visión IA en borde para invernaderos y campo, sobre el stack compartido de ChimeraNext.',
     detailedCaseStudy: {
-      problem: 'Las transferencias interbancarias corporativas B2B entre LATAM, EE.UU. y Europa sufrían tiempos de retención de 3 a 5 días y comisiones ocultas del 4.2%.',
-      solution: 'Despliegue del motor de compensación y liquidación soberana de ChimeraNext con microservicios modulares para AML instantáneo, enrutamiento inteligente de liquidez y API de payout en tiempo real.',
+      problem: 'Las enfermedades de cultivo se detectan tarde, cuando ya se propagaron por el invernadero.',
+      solution: 'Detección fitosanitaria con visión IA en edge + NVIDIA physical-AI, construida sobre microservicios compartidos.',
       microservicesDeployed: [
-        'Multi-Currency Ledger v3',
-        'Real-time AML Screening',
-        'Dynamic FX Routing',
-        'Compliance Audit Vault'
+        'vision-core',
+        'agentic-core',
+        'payments-core',
+        'marketplace-core'
       ],
       outcomes: [
-        { label: 'Tiempo de Liquidación', value: '< 90 segundos' },
-        { label: 'Reducción de Costos FX', value: '62%' },
-        { label: 'Volumen Mensual Procesado', value: '$84M USD' },
-        { label: 'Países Soportados', value: '38 jurisdicciones' }
-      ],
-      founderTestimonial: {
-        quote: 'ChimeraNext nos entregó una arquitectura financiera lista para auditoría SOC2 y SEC desde la semana 3. Eso nos permitió cerrar contratos enterprise en tiempo récord.',
-        author: 'Guillermo Arismendi',
-        role: 'Co-fundador & CEO, NexusPay'
-      }
+        { label: 'Sitio', value: 'vertivolatam.com' },
+        { label: 'Modelo', value: 'Hardware + SaaS' }
+      ]
     }
   },
   {
-    id: 'cognipulse',
-    name: 'CogniPulse',
-    category: 'ENTERPRISE AI / AUTOMATIZACIÓN',
+    id: 'habitanexus',
+    name: 'HabitaNexus',
+    category: 'PROPTECH / LEGALTECH',
     status: 'Live Production',
-    description: 'Agentes inteligentes autónomos para análisis de documentos contractuales y optimización de back-office financiero sin intervención manual de operadores.',
-    mainMetricLabel: 'Rendimiento F1 Score',
-    mainMetricValue: '99.4% F1',
-    subMetricLabel: 'Ahorro Mensual',
-    subMetricValue: '320 hrs/mes por cuenta',
-    techStack: ['Python', 'LangGraph', 'Vector DB', 'FastAPI', 'React', 'Kubernetes'],
-    foundedYear: '2024',
-    tractionSummary: 'Orquestación de más de 450,000 contratos legales y pólizas con tasa de alucinación menor al 0.05%.',
+    description: 'From ~60 days to under 7: rent long-term with escrow, two-way claims, no lawyer. Contratos de arriendo Ley-7527 con depósitos escrow y reclamos bidireccionales.',
+    mainMetricLabel: 'Arriendo',
+    mainMetricValue: 'De ~60 días a <7',
+    subMetricLabel: 'Contratos',
+    subMetricValue: 'Ley-7527 + escrow',
+    techStack: ['Marketplace', 'Escrow', 'Geospatial', 'Compliance'],
+    foundedYear: '—',
+    tractionSummary: 'Arriendo largo plazo con escrow y claims bidireccionales, más producto B2G de compliance para municipalidades.',
     detailedCaseStudy: {
-      problem: 'Las firmas de auditoría y fondos de inversión perdían cientos de horas hombre semanales reconciliando cláusulas de covenants y condiciones comerciales.',
-      solution: 'Arquitectura RAG multi-agente construida sobre el pipeline cognitivo de microservicios de ChimeraNext, con verificación cruzada determinista y firmas criptográficas.',
+      problem: 'Arrendar largo plazo toma ~60 días entre búsqueda, negociación, abogados y garantías.',
+      solution: 'Marketplace de arriendo Ley-7527 con escrow de depósitos, reclamos bidireccionales sin abogado y capa B2G para municipalidades.',
       microservicesDeployed: [
-        'Cognitive Data Pipeline',
-        'Contract AST Parser',
-        'Zero-Trust Vector Store',
-        'Autonomous Verification Agent'
+        'geospatial-core',
+        'marketplace-core',
+        'payments-core',
+        'compliance-core',
+        'agentic-core'
       ],
       outcomes: [
-        { label: 'Precisión F1 en Cláusulas', value: '99.4%' },
-        { label: 'Ahorro Operativo por Cuenta', value: '320 hrs/mes' },
-        { label: 'Velocidad de Ingesta', value: '1,200 págs/min' },
-        { label: 'Integración ERP', value: 'SAP, NetSuite, Salesforce' }
-      ],
-      founderTestimonial: {
-        quote: 'El stack de IA de ChimeraNext erradicó 9 meses de I+D. Logramos un F1 Score de nivel institucional en el primer mes de producción.',
-        author: 'Dra. Elena Vasquez',
-        role: 'Chief AI Officer, CogniPulse'
-      }
+        { label: 'Sitio', value: 'habitanexus.com' },
+        { label: 'Modelo', value: 'Marketplace + B2G' }
+      ]
     }
   },
   {
-    id: 'logistiq',
-    name: 'Logistiq',
-    category: 'SUPPLY CHAIN & ÚLTIMA MILLA',
+    id: 'altrupets',
+    name: 'AltruPets',
+    category: 'PETTECH / GOVTECH',
     status: 'Live Production',
-    description: 'Ruteador algorítmico y monitoreo IoT predictivo para flotas comerciales complejas, optimizando consumos energéticos y reduciendo tiempos muertos de despacho.',
-    mainMetricLabel: 'Rutas Optimizadas',
-    mainMetricValue: '+180K Rutas',
-    subMetricLabel: 'Huella de Carbono',
-    subMetricValue: '-22% Emisiones CO2',
-    techStack: ['Node.js', 'Go', 'MQTT', 'TimescaleDB', 'Leaflet', 'React Islands'],
-    foundedYear: '2023',
-    tractionSummary: 'Operando en 7 centros metropolitanos con sincronización telemática en submilisegundos.',
+    description: 'The coordination layer for animal welfare: subsidies and abuse reports that actually get routed, approved and acted on.',
+    mainMetricLabel: 'Coordinación',
+    mainMetricValue: 'Subsidios + denuncias',
+    subMetricLabel: 'Mercado',
+    subMetricValue: 'Municipalidades · LATAM',
+    techStack: ['Marketplace', 'Compliance', 'Geospatial', 'P2P Donations'],
+    foundedYear: '—',
+    tractionSummary: 'Plataforma cloud-native que conecta rescatistas, veterinarias y municipalidades. Nunca retiene fondos (SUGEF-safe).',
     detailedCaseStudy: {
-      problem: 'Ineficiencias severas en entregas urbanas de última milla causadas por congestión variable, ventanas horarias rígidas y alto costo de combustible.',
-      solution: 'Despliegue del motor de enrutamiento genético de ChimeraNext combinado con microservicios de telemetría IoT de baja latencia para re-enrutamiento dinámico en tiempo real.',
+      problem: 'Subsidios veterinarios y denuncias de maltrato no se rutean ni se actúa sobre ellos.',
+      solution: 'Capa de coordinación B2G: subsidios, denuncias autenticadas, rescate, adopción y donaciones P2P.',
       microservicesDeployed: [
-        'Fleet Telemetry Broker',
-        'Spatial Routing Solver',
-        'Predictive Maintenance ML',
-        'Driver Companion Gateway'
+        'marketplace-core',
+        'agentic-core',
+        'compliance-core',
+        'filing-core',
+        'geospatial-core'
       ],
       outcomes: [
-        { label: 'Rutas Diarias Despachadas', value: '+180,000' },
-        { label: 'Ahorro de Combustible', value: '18.4%' },
-        { label: 'Cumplimiento On-Time (SLA)', value: '98.8%' },
-        { label: 'Reducción Emisiones CO2', value: '-22%' }
-      ],
-      founderTestimonial: {
-        quote: 'Nuestras métricas operativas convencieron a los mayores operadores de retail del continente. La infraestructura compartida nos dio respaldo enterprise.',
-        author: 'Marcos R. Peña',
-        role: 'Director de Operaciones, Logistiq'
-      }
+        { label: 'Sitio', value: 'altrupets.com' },
+        { label: 'Fondos retenidos', value: 'Ninguno (SUGEF-safe)' }
+      ]
     }
   },
   {
-    id: 'healthgrid',
-    name: 'HealthGrid',
-    category: 'HEALTHTECH & INTEROPERABILIDAD',
+    id: 'aduanext',
+    name: 'Aduanext',
+    category: 'ADUANAS / GOVTECH',
     status: 'Live Production',
-    description: 'Capa de interoperabilidad clínica y teleconsulta cifrada con arquitectura zero-trust para instituciones hospitalarias de alta complejidad.',
-    mainMetricLabel: 'Red Operativa',
-    mainMetricValue: '42 Clínicas',
-    subMetricLabel: 'Seguridad de Datos',
-    subMetricValue: 'HIPAA & HL7 Certified',
-    techStack: ['Rust', 'TypeScript', 'WebRTC', 'FHIR API', 'Kubernetes', 'PostgreSQL'],
-    foundedYear: '2024',
-    tractionSummary: 'Certificación HIPAA y HL7 FHIR integrada nativamente para intercambios de historias clínicas sin fisuras.',
+    description: 'Clear customs in hours, not days, automated. SaaS de automatización aduanera para el comercio LATAM.',
+    mainMetricLabel: 'Despacho',
+    mainMetricValue: 'Horas, no días',
+    subMetricLabel: 'Mercado',
+    subMetricValue: 'Importadores · LATAM',
+    techStack: ['Compliance', 'E-invoicing', 'Payments', 'Automation'],
+    foundedYear: '—',
+    tractionSummary: 'Automatización de aduanas para importadores, exportadores y brokers en LATAM.',
     detailedCaseStudy: {
-      problem: 'Silos de información en redes hospitalarias privadas que impedían la continuidad asistencial y ponían en riesgo el cumplimiento regulatorio de privacidad médica.',
-      solution: 'Capa federada de interoperabilidad FHIR construida sobre microservicios de seguridad Zero-Trust de ChimeraNext con cifrado de grado militar de extremo a extremo.',
+      problem: 'El despacho aduanero toma días de trámite manual y papel.',
+      solution: 'SaaS de automatización aduanera sobre microservicios de compliance, facturación y pagos.',
       microservicesDeployed: [
-        'FHIR Interop Bridge',
-        'Zero-Trust Auth Tokenizer',
-        'Encrypted Video Teleconsult',
-        'Clinical Event Stream'
+        'compliance-core',
+        'filing-core',
+        'invoice-core',
+        'payments-core'
       ],
       outcomes: [
-        { label: 'Hospitales y Clínicas Conectadas', value: '42 sedes' },
-        { label: 'Consultas Médicas Mensuales', value: '64,000+' },
-        { label: 'Disponibilidad de Servicio', value: '99.98%' },
-        { label: 'Cumplimiento Normativo', value: 'HIPAA, GDPR, HL7' }
-      ],
-      founderTestimonial: {
-        quote: 'La seguridad no es negociable en salud. ChimeraNext nos permitió salir al mercado con todas las certificaciones institucionales listas.',
-        author: 'Dra. Sofia Mondragón',
-        role: 'Founder & Medical Director, HealthGrid'
-      }
+        { label: 'Sitio', value: 'aduanext.com' },
+        { label: 'Modelo', value: 'SaaS B2B' }
+      ]
     }
   }
 ];

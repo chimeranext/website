@@ -193,7 +193,7 @@ export const VenturesSection: React.FC<VenturesSectionProps> = ({
                 </span>
                 <span className="text-slate-500">•</span>
                 <span className="text-xs font-grotesk text-emerald-400 font-semibold">
-                  Producción Activa (Año {activeVenture.foundedYear})
+                  Producción Activa{activeVenture.foundedYear !== '—' ? ` (Año ${activeVenture.foundedYear})` : ''}
                 </span>
               </div>
               <h3 className="text-2xl sm:text-3xl font-extrabold font-jakarta">
